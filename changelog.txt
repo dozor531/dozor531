@@ -1,0 +1,880 @@
+version 0.9.2 (04 April 2021)
+- fix full artifact bag message
+- add missing dot to sentences in few windows
+- display Lighthouse count in Kingdom Overview
+- add proper large obstacle generation for battlefields
+- fast AI units should try to get the first strike
+- fix Sphinx missing rewards
+- reset paralyze state when receiving spell damage
+- randomize attack position of AI monsters
+- fix missing hero paths after loading a save
+- fix incorrect window resolution in fullscreen mode for SDL 2
+- fix Choose Your Lord video sound
+- improve castle garrison estimation for AI
+- remove the mobility index sprite info from the hero Quick Info dialog
+- prohibit the guardian hero from casting adventure spells
+- fix merging of the castle guardian army
+- fix AI defensive unit behavior
+- add AI estimation of hero spell strength
+- force units into empty slots first during merge
+- do not always offer recruitment of heroes from the player's initial class, make recruitment more random
+- allow player to control the hero during the turn of a hypnotized enemy unit
+- archers should not lose shots when attacking in melee
+- check that the hero is able to move before focusing him and starting his movement
+- respect initial order of units (from top to bottom) when determining the order of unit moves in battle
+- add PlayStation Vita support
+- fix creature recruit window UI
+- fix rendering of Arm of the Martyr
+- fix blind spell logic
+- do not give additional 500 experience to the hero who won the battle if the opposing hero surrenders or flees
+- fix hypnotize spell behavior and the spell description
+- update positions of monster sprites and numbers on army status panel
+- fix possibly incorrect arrow direction from shooters
+- fix scrollbar position in multiple places
+- standartize icon position in town's dialog
+- fix Max/Min button position in monster recruit dialog
+- show the surrender dialog even if there is not enough gold to surrender
+- do not apply morale penalty to a hero if he wins a battle in a Graveyard, Shipwreck or Derelict Ship
+- add cross army drag split
+- reset player focus if focused hero or castle was removed
+- allow to switch players for multiplayer map selection
+- allow to use mouse wheel anywhere for split troop dialog
+- fix logic of placing monsters for a New Month
+- fix Kingdom Overview selection drawings
+- dix boat drawing issues
+- do not hide mouse cursor if the Skill Info dialog called from the Level Up dialog contains OK button
+- fix incorrect drawings for battle OKAY button
+- fix rendering of the Castle Captain's spell points bar
+- fix missing sounds within System dialog
+- fix interaction with the castle bridge for flying units
+- use rule of 9 for Ultimate Artifact placement
+- fix last focus option
+- fix incorrect cursor icon over ally's castle
+- add initial implementation of View spells
+- show normal monster names in Visions spell
+- show full 1-pixel black border for Show Interface option
+- show more detailed morale and luck description
+- AI predicts double cell attacks in combat
+- reset blind spell upon taking any damage
+- allow to place units in moat in front of the bridge
+- align spells in the magic book
+- add manual replay of battle if instant battle outcome is negative
+- sounds off when minimizing game window
+- fix playing background music during video playback on SDL1
+- change damage description log message for some mass spells
+- add executable file description and icon on Windows
+- fix pathfinding backwards move and penalty in battle
+- fix City of the dead incorrect monster info
+- update no data error message
+- do not allow to manage monsters in unhired hero dialog
+- AI supports additional harmful combat spells
+- do not open the hero screen in readonly mode if it was opened from the meeting screen, just disable the DISMISS button instead
+- do not show external music option with an absent folder
+- wait for user input at the end of winning video
+- fix double exit dialog appearence
+- fix missing cursor in Army Bar for SDL 1
+- ranged AI troops should move when blocked by a strong unit
+- if the unit attacks twice, apply the second attack to the same cell as the first attack
+- fix double hex attack target for AI troops
+- show the build window with the OKAY button disabled if there is not enough resources to build this building
+- AI uses mass damage spells in combat
+- improvements for AI wide unit pathfinding
+- fix the pathfinding near monsters: do not allow the hero to pass through the monster
+- fix MIN and MAX button drawings
+- do not give an extra day of life to a player without castles
+- preserve unit direction in battle if it moves strictly vertically
+- do not allow the visiting hero to learn Library spells if the Library hasn't been built yet
+- fix inability to reorganize troops in Kingdom View dialog
+
+version 0.9.1 (04 March 2021)
+- add "Artifacts" category in Oracle Screen
+- add barrier fading animation
+- improve AI retreat condition
+- fix Split-related issues and implement some new techniques
+- disable retreat for auto battle mode
+- fix object's visited info and grammar
+- fix issues with path finding during combat to avoid being stopped by moat
+- fix incorrect names of Ballista and Turret during battle
+- add missing shadow for arrow cursor on SDL2
+- fix ACCEPT button font for Good Interface
+- fix AI wide units pathfding and moat logic
+- allow to modify a hero during level up
+- fix summon boat logic
+- fix monster movement nearby moat
+- AI does not chase faster units during battle
+- fix hero shadow drawing on world map
+- fix missing animation frame for wince
+- fix object fading animation on world map
+- fix missing last lost hero condition reset
+- fix simultaneous animation of boat while during another building construction
+- change logic in monster hiring window
+- fix save loading crash for broken saves
+- add middle resolution status support
+- do not show waiting cursor for an exhausted hero
+- fix post Daemon Cave missing music
+- fix well's max button drawing
+- fix incorrect castle focus while visiting by a hero
+- fix fog drawings
+- reduce income window area in towns
+- fix autosave option logic
+- fix overlapped battleground objects
+- remember scenario difficulty while restarting or choosing a new scenario
+- fix multiple game frezes with MIDI music playback
+- add resizable window support on SDL2
+- make deterministic bonus for hero level-up
+- fix wrong controller pointer speed option name and touch coordinates translation
+- add auto battle resolve mode to the game
+- add logic to support video frame rescaling
+- optimize screen resolution logic
+- fix garrison strength estimation by AI
+- fix magic gardens priority if object capture is enabled
+- optimize AI's troop placement before the battle
+- use same colour for all battlegrounds
+- change text in map size hint, to be displayed in more pleasant manner
+- load game button from UI should lead to common load game logic
+- initial implementation of "View World"
+- fix application crash for drawings
+- change building status message for Dwellings
+- fix crash when entering ally castle
+- add Campaign continuation initial support
+- speed up rendering of World Map
+- fix spell book status on hovering
+- save fullscreen mode in configuration file while switching between modes
+- AI should avoid spellcasting if has advantage in battle
+- fix rendering with mouse emulation
+- fix extensive memory usage by dialog windows
+
+version 0.9.0 (04 February 2021)
+- make AI to buy magic books in castles
+- fix infinite AI turns
+- optimize AI hero movements
+- do not visit useless objects by AI heroes
+- fix AI castle defence mechanics
+- restore cursor theme after HeroDialog or CastleDialog
+- do not show marketplace icon for joining creature dialog is no markets exist
+- allow to retreat for a hero with no castles
+- add more logic for AI jumping into whirlpools
+- do not block shooters with overpowered AI army
+- fix overlapped flag in Knight's castle
+- disable actions while buying a hero or during construction
+- change the text for the number of secondary skills in level up window
+- play music after showing New Week/Month dialog
+- reset hero direction when recruiting
+- align dates by left in the load file dialog
+- cap Necromancy bonus to 100% instead of 90%
+- fix multiple bugs in Kingdom View
+- fix Transcribe Spell Description Text
+- cancel spell selection with ESC button in combat
+- add a separate option for displaying terrain penalty
+- fix missing music for Load Game option
+- fix Scouting skill bugs and make crystal ball work
+- do not play dwarves' resist sound during mass spells
+- fix Berserk spell logic
+- fix Chain lightning spell logic
+- fix castle flag drawing for nearby hero
+- add empty line for visited info
+- allow Anti-magic spell on mirror-master creature
+- do not draw wall for destroyed bridge
+- fix pathfinding issues and missing path display
+- fix Kingdom overview crash
+- do no freeze building animation during construction or hero's hiring
+- show Spade of Necromancy artifact bonus in Necromancy Skill window
+- display troop counter only for static animations
+- show pointer cursor most of the time during combat
+- fix castle's object positions
+- display correct text when righ-clicking on map tile
+- fix path selection for AI hero in patrol
+- fix town portal buttons in Good interface
+- add new standard window with shadow
+- fix events when AI was choosing to disembark on empty tiles
+- change highlighted cursor area for spells during battle
+- implement Alt hotkey to unite stacks of same type
+- implement CTRL split even with selected troop
+- add touchpad support
+- fix joining creature logic with the lack of gold
+- quick Info dialogs have fixed position when clicked from right bar
+- add a check for special objects that you can't move through
+- after AI loses to either castle or other player, center the view on them
+- fix animation order of creatures during combat
+- do not close File Save window while cancelling file overriding
+- fix marketplace button drawings in Surrender window
+- fix castle's battlefield drawings
+- hide Marketplace button for Surrender window
+- always draw troop counter at the top of monster sprites
+- fix a log message when a tower kills one creature
+- display battle grid for whole battlefield
+- fix object drawings on battlefield
+- Bone Dragon morale malus shows in battle and in dialog window
+- add PNG image saving support for SDL2
+- add palette support for SDL2
+- fix morale and luck sprites positioning in meeting screen
+- fix mouse cursor switching while navigating on hero or castle panel
+- always display the correct monster combat speed
+- fix Player Rankings message bar
+- add game controller support
+- add Gold version support for video playback
+- fix Earthquake spell animation
+- fix enemy castle capture action
+- speed up interface drawings for World map
+- fix Hydra's movement during battle
+- set correct size for spell point and experience point zone in hero window
+- fix income info clickable area at castle options window
+- add spells into Hero's book at the start of a map
+- add initial Nintendo Switch support
+- fix Battle Only mode UI
+- fix logic in mouse button press
+- make interface itemsbar adjustment while fixing some split logics
+- add FPS display support
+- fix clickable area for Heroes and Castles in their lists
+- differentiate save files based on game type
+- fix a crash while trying to get settings path on SDL 2
+- fix path calculation for 2-hex creatures in battle
+- add software emulation support for cursor
+
+version 0.8.4 (23 December 2020)
+- speed up sprites allocation and deallocation (noticeable for low-profile devices)
+- add extra info in first game message about F4 key
+- fix moral and luck indicator messages
+- fix elements' layout at monster info dialog
+- disable monster attack using Dimension Door
+- remove click area around "exit" button in castle dialog
+- make elements gray for inactive game settings
+- fix cursor disappearance during resource collection on SDL 1
+- fix Summon Boat animation
+- fix Summon boat logic
+- fix popup message for Abandoned Mine
+- fix Select button movement in Scenario window
+- fix position of monsters in battle
+- modify monster upgrade window for 3 monsters
+- make proper calculation of movement points
+- fix Hide interface reset issue
+- show correct artifact transfer dialog after battle
+- fix impassable barrier
+- fix meeting hero update after exiting hero's dialog
+- adjust troop separation dialog position
+- fix incorrect hero values for Kingdom Overview screen
+- fix a crash in multiplayer game selection
+- fix Transcribing spell scrolls logic and UI
+- change info bar text at bottom of screen when mouse cursor positioned under spell book
+- fix starting unit values
+- implement smooth slider
+- add an option to reveal secondary skill info by right click
+- implement Stack split hotkeys (Ctrl and Shift)
+- fix Resurrect logic
+- ignore fog for dimension door
+- disable gift button for a single player
+- fix empty castle capture behavior
+- fix interaction with skeleton on map
+- persist random race for new games
+- fix road penalty text
+- fix incorrect town frames for evil town portal UI
+- speed up generation of few images
+- fix UI defect after closing hero meeting dialog
+- fix UI defect after using town portal spell
+- modify a message of joining 1 creature due to diplomacy
+- do not show income popup window for exit button in castle screen
+- change Tavern dialog caption color to yellow
+- fix rendering and mouse behavior for SDL2
+- fix elements layout for surrendering dialog
+- fix shadow under battle summary dialog
+- fix surrending cost calculation
+- fix Wagon sounds
+- fix castle and hero interaction with mouse in Kingdom Overview
+- play sound only after a battle with a monster to grab an artifact
+- change window title font color to yellow
+- fix Pyramid bad luck position
+- correct few sprites of mini-monsters
+- add a popup message for View Hero button
+- remove spaces for Level messages
+- clear message log for retreat case
+- add missing Info word for artifact status bar
+- add popup messages for next/previous pages in spell book
+- use keypad Enter as a normal one
+- add magic book image to popup window for no gold case
+- add evil UI elements for "Town portal" spell window
+- show proper information about enemy based on Thieves Guild count
+- fix layout for campaign selection window
+- fix wrong title and wrong text for Freeman's Foundry window
+- fix battle log text layout
+- use Delete key to erase a part of save filename
+- fix post game conditions
+- do not reset army while moving a hero to castle
+- start battle instantly if sounds are off
+- add captain portraits in Kingdom Overview
+- correctly reduce hero army after whirlpool
+- fix Mine info dialog near hero
+- reset Adventure Options buttons when cursor move out
+- draw shadow for empty boat
+- do not show army formation with no captain
+- fix stack overflow when using spells
+- fix disappearing hero while attacking monsters standing on a barrier
+- select a hero with move points when the focus is on a castle
+- increase Meteor Shower spell animation
+- fix spell order in magic book
+- change Artesian spring logic
+- fix Alchemist Tower artifact manipulation logic
+- assemble Battle Garb of Anduran artifact for hero meeting
+- place a hero into castle at the start of game
+- change map size popup window text
+- fix primary skill frame color in hero meering dialog
+- add a title for joining army dialog
+- fix battle false hex shadow
+- fix drawings for meeting hero dialog
+- fix map loading message typo
+- update hero availability pool after hero purchase
+- show hero's name in magic book related windows
+- fix scenario selection stuck condition
+- fix portraits/hero information display in battle only mode
+- fix normal moral icon image
+- fix enemy army threat check for AI
+- fix changing boat direction by AI at boarding
+- fix Sorceress castle background image
+- fix missing spell point digits
+
+version 0.8.3 (04 November 2020)
+- protect higher value (based on buildings built) AI castles first
+- recruit AI heroes in castles other than the first one in the list
+- improve castle build order for AI (priority on gold income buildings)
+- improve castle monster recruitment
+- fix slowed flying creature movement
+- remember boat direction when a hero boarding it
+- update Town Portal dialog
+- fix "jump" flying animation when unit has to turn for attack
+- make one rumor per week in Taverns
+- fix a case of second attack on blinded creature
+- fix Monster Info dialog in evil interface
+- fix few castle icon sprites
+- speed up video loading
+- play sound on shipwreck pickup
+- fix Freeman Foundry UI
+- fix War Troll's stone sprite
+- fix Cavalry sprite
+- fix mage guild dialog message
+- change troop logic exchange during hero meeting
+- fix boat summoning animation
+- AI heroes are able to exchange armies and artifacts
+- add road connection drawings for Barbarian castle
+- fix castle defense trigger condition
+- do not show teleport animation in some AI cases
+- center Good and Evil interface windows
+- teach AI units to block enemy archers
+- show boat froth sprite when stationary
+- fix mine guardians sprites
+- fix battle only mode
+- improve army merge logic
+- fix lighthouse missing movement bonus
+- fix boat and hero positions
+- speed up drawings for World Map
+- fix pass image position on the world map
+- give at least 1 skeleton via necromancy after victory
+- fix Hero screen status bar message position
+- fix Hero meeting screen title position
+- change Pyramid Bad Luck message
+- fix Hero's portrait position in hiring window
+- fix town population status text position
+- fix boat animation and castle building rendering
+- fix troop counter window position
+- fix adjacent monsters when removing one
+- add after play animation
+- fix redraw order for unit count
+- use hero spell power when applying Earthquake
+- fix Lighthouse fog clearance
+- change Hut of the Magi behavior
+- add game resolution popup window
+- fix spelling in castle dialog
+- always show building requirements even if the building is already built
+- fix Knowledge message in Arena
+- five every magic guild a guaranteed damage and non-damage spell
+- fix OK button in joining army window
+- adjust few elements in resolution window
+- fix battle option text overlapping
+- adjust post battle shadowing
+- change main menu popup window descriptions
+- add a support of hero AI patrol mode set in scenario
+- make autosave with capital letters
+- disable spell animation after mine was cleared
+- save boat direction when disembarking
+- set parts of wide objects as visited
+- allow AI player to start it's move with action
+- use original difficulty bonuses for the game
+- check armies for validity before starting the battle
+- remove mud pool from cover object list
+- fix non-necro undead units decreasing morale in an all-undead army
+- remember Ghost number after the battle
+- AI is able to collect/capture multiple objects on the same move
+- adjust heuristics to make sure AI doesn't miss important objects
+- fix a bug where AI was able to buy boats in a castle without shipyard
+- fix the artifact spell damage modifiers
+- display a proper message for Sea Bottle
+- make AI more aggressive when dealing with archers during battle
+- replace "Ship Wreck" word with "Shipwreck"
+- set random starting experience for starting heroes
+- play flotsam disappearing sound after closing the UI window
+- fix income window drawings
+- when retreating, give the hero its default army instead of 1 T1 unit
+- stop battle after AI kills the last creature
+- use word 'one' instead of '1' in battle log
+- fix Thieves Guild background
+- fix visibility of AI hero moving close to fog
+- limit Player name text within given input box
+- show skip turn message during AI turns
+- allow to cast a spell with no move points
+- fix incorrect resurrected troops after battle
+- honor player count for Hot Seat mode
+- fix system options UI dialog
+- remove scrollbars from interface in battle only mode
+- add fading animation for defeated AI hero
+- fix time loss conditions in Info window
+- fix displaying of remaining move points
+- fix multiple text issues
+- modify messages for splitting army window
+- fix the clipped boat sprite
+
+version 0.8.2 (04 October 2020)
+- make correct spawn of neutral monsters and their growth
+- display correct window while right clicking on a monster in Kingdom Overview
+- add a transition while boarding and off-boarding boats
+- make hero animation movement smooth
+- fix price of loyalty artifact selection
+- fix tents/barriers from Price of Loyalty
+- fix monster placement at the beginning of months
+- fix missing dialog box in some rare cases
+- do not show journal scrollbar when it's not open
+- fix second attack for blinded creatures
+- fix typo in description of "Knowledge" skill at hero screen
+- replace the original project AI with an enhanced verion of AI (making it not that stupid)
+- save neutral army monsters after battle
+- always reduce moral for visited Graveyard and Ship Wreck
+- allow heroes to move last step with remaining move points
+- update village's shadow after a castle was built
+- fix drawing castle's shadows under roads
+- fix missing objects on puzzle map
+- fix empty puzzle map
+- fix Ultimate image on puzzle map
+- fix puzzle map color scheme
+- fix treasure location map doesn't update after visiting obelisk
+- fix amount of creatures position in monster information dialog
+- fix object and shadow drawings on the World Map
+- fix few hero's names
+- draw all dead troops on the battlefield
+- allow to open hero's dialog during heroes meeting
+- fix dialog frame generation
+- fix bookmark positions in Spell Book
+- fix text position in creature recruit window
+- add Information window by right click on buttons in File dialog
+- add the word "Skill" for "Attack Skill" and "Defense Skill" in monster window
+- fix font generation and its position
+- fix popup windows for Spell Book
+- fix cursor for Adandoned mine protected by monsters
+- fix scrollbar in Settings window
+- extend campaign support
+- add proper AI base code for battle
+- change hero's description in tavern
+- use single OKAY button for Config window
+- don't shift High Score background for high resolutions
+- shift second hero's portrait in town
+- change unit movement speed in battle under spells 
+- add dynamic color for item selection
+- add a popup window for clicking on Income in castle construction screen
+- remember move points of surrendered/retreated hero
+- fix bottom-to-top scrolling issue by keyboard key
+- reset dimissed hero's army
+- focus on a new hired hero in a castle
+- check magic resistance against Chain Lighting spell
+- fix multiple UI issues in Hero's Screen
+- add proper credits
+- center Hero's Options dialog
+- display spell points in magic book from bottom to top
+- display Liches for the City of the Dead
+- fix hero button position for joining window
+- fix a crash for Mirror image creature
+- reset music after exiting a castle
+- fix Daemon Cave incorrect window
+- fix Blind spell name
+- fix victory message in battle
+- fix File Options window position
+- fix text color for joining window
+- fix monster info shadow position
+- remove extra wince animation for cold ray spell
+- fix some icon positions in hero's dialog
+- center spell point text in hero's dialog
+- add word 'player' for defeated player window
+- fix creature shadow contour issue
+- add button choice support for campaign
+- fix cycling colors for mirrored Genie
+- add external music support by default
+- fix "battle: show damage info" option
+- fix Bloodlust animation
+- speed up calculations for path finding algorithm
+- fix caption issue with map's objects
+- fix missing resolutions and black screen for SDL 1
+- add a dot at the end of multiple messages
+- fix few Phoenix frames
+- make scroolbar more user friendly in battle log
+- fix game info buttons
+- disable Next Hero button if none of heroes can move
+- fix multiplayer player count window position
+- fix graphical issues in big text font
+- fix creature animation going out of window
+- fix few scenario infor window UI issues
+- optimise video playback
+- fix map size button state selection
+- fix New Game window UI elements
+- fix a crash while downgrading resolution in 8-bit mode
+- remove "castle: allow recruits special/expansion heroes" option
+- fix sky view status
+- fix generated window position
+- make Exit button disabled for popup windows in castle
+- fix Resurrection animation frame and moving dead units
+
+version 0.8.1 (04 September 2020)
+- play video intro at the opening
+- set focus on a hero while opening spell book
+- set minimum Spell Power to be always 1
+- fix castle mini status icon
+- fix drawings of Mage Guilds in castles
+- remove multiple redundant / useless configuration settings
+- fix message dialog shadow
+- add proper support of configuration file
+- fix shift after opening and closing system options dialog
+- fix Gift button for evil interface
+- fix drawings of letters
+- fix Resurrect spell animation
+- add a support of disabled buttons
+- fix Air elemental drawings
+- remove "Manage creatures" button's shadow
+- add missing glowing effects of units in UI
+- fix screen dimming effects
+- change missing file message
+- fix Armageddon animation
+- update interface after exiting hero dialog
+- fix incorrect map extension crash
+- show diplomacy window always and fix marketplace button
+- add dot at the end of player's turn text
+- always center scenario window position
+- fix map difficulty text and its position
+- use proper config background window image
+- reset interface while changing its type
+- add game scenario dialog shadow
+- do not refocus after exiting castle's window
+- make Disabled Campaign button in High Score board
+- disable Campaign button if no files present
+- fix abandoned mine cursor
+- fix Sphinx message
+- modify Graveyard robber message
+- polish "battle only" button
+- show upgrade button if there's not enough money
+- fix lighthouse spelling
+- fix Dismiss button position in Hero's dialog
+- add missing title for graveyard message
+- fix graveyard message
+- fix marketplace text
+- show a dialog if a hero has no space for Spell Book
+- don't display artifact dialog for unknown artifact
+- fix an ability to skip button state by using a keyboard
+- apply Chain Lightning damage on allies as well
+- skip turn of resurrected troop
+- fix EXIT button position in creature window
+- fix AI turn crash
+- remove black background over army counter
+- don't show start and end position for monster log movement
+- add logic to handle inability to buy monsters in well
+- don't draw tent images in the castle window avoiding weird animation during castle construction
+- remove move penalty for visiting whirlpool/teleport
+- fix descriptions for Thief's Guild and for Pathfinding skill
+- fix logic of Town Gate spell
+- fix wrong OKAY button in System Options for Evil interface
+- skip heroes who do not have move points for move or sleep
+
+version 0.8 (26 July 2020)
+- add in-game option to change resolution
+- add fade-in / fade-out animation for AI heroes
+- fix logic when all stone liths were connected to each other even with different types
+- fix logic for stone liths in regard to allies
+- fix flickering of status bar in castle
+- fix attack cursor while pointing a monster
+- fix wolf's low attack animation
+- fix monster attack and fade animation on the World Map
+- add boat building animation
+- adjust hero battle dialog to align text
+- display boat froth sprite only if away from the coast
+- use correct sprite for castle's exit button
+- do not play sounds in castle's window when restoring the application
+- fix cursor for empty enemy castle
+- fix incorrect popping window in tavern
+- fix delayed mouse click on a cell during battle
+- fix hero's level up window with single secondary skill
+- fix system menu OKAY button
+- add SMK video file support
+- reset sound only if battle is shown
+- add support for ogg music from GOG version
+- fix castle drawings on the World Map
+- add Holy Shout spell blur effect
+- fix pathfinding calculations
+- increase the amount of sound channels to 16
+- add death wave/ripple spell effect animation
+- fix Hypnotize and Berserk spell behaviors
+- correct battle hero animation
+- update elemental storm spell
+- "Summon boat" spell should not be used on a board
+- do not focus screen on a hero after adjusting scroll speed
+- fix Shipwreck empty battle
+- use only screen supported resolutions for the game
+- update focus logic for AI moving out of the fog
+- change mass spell icons
+- add frame border to highscore screen
+- reuse SDL2 texture for drawing speedup
+- adjust arena object dialog
+- set monster to static state after receiving a hit
+- fix mage guild window background
+- fix hero's status bar item locations
+- fix going out the battle window animation
+- shift battle log window by 1 pixel up
+- add a partial drawing support for disabled buttons
+- add Chain Lightning spell animation
+- add color cycling for active monster aura
+- fix incorrect hero's interaction with objects during movement
+- adjust flags animation with battle speed
+- make hero's movement smoother
+- show a proper status window message depending on resolution
+- fix last unit being hit 1 frame missing animation
+- remove Skill word from level up window text
+- add full animation in castles
+- update cursor while pointing over empty interface area
+- make "Next hero" button disable when no heroes exist
+- fix extra shifting upon landing for flying monsters
+- adjust music fade in effect and better sound selection
+- add monster animation on the World Map
+- fix fullscreen behavior in SDL 2
+- fix World Map drawings and screen jumping during hero movement
+- fix display drawing during mouse movement in SDL 2
+- fix ship shifting upon boarding it
+- add keyboard support for navigation in spell book
+- display different message in Mage Guild if no hero is in castle
+- fix text positioning in status bar
+- add lightning spell animation
+- do not run idle monster animation at every human's turn
+- fix marketplace window UI issues
+- fix creature contour drawing
+- add keyboard support for navigating between castles and heroes
+- add hero's flag animation in a world map
+- draw post attack animation in parallel so that battle animation does not look slow
+- add a flag to castle's captain
+- fix cursor offsets so that the cursor does not jump while changing its type
+- fix incorrect drawings for many interactive dialogs
+- make yellow frame for not available building info
+- fix hero hiring animation position
+- fix incorrect mouse cursor type during hero's movement by keyboard
+- add magic resist sound
+- add missing Skill word for Attack and Defense
+- fix fog drawings
+- multiple tweaks for AI
+- fix Spell Power naming in its icon and description
+- add animation of many objects on World Map
+- fix Mirror Image clone placement
+- add smooth screen scrolling during hero's movement
+- fix screen shifting when a hero initiates movement without movement points
+- complete hero's movement cell if an user clicks by mouse during hero's movement
+- add Stunning animation
+- fix Resurrect spell animation and logic
+- fix Armageddon and Earthquake animations
+- show gray text for spells which need more than current hero spell amount
+- set correct yellow and white font
+- fix BloodLust spell animation
+- fix incorrect stunning state rendering
+- add mirror image effect
+- fix puzzle view on high resolutions
+- remove Visual Studio 2015 Redistributable package dependency for 64-bit application on Windows
+- add F4 fullscreen hotkey support
+- set correct animation for Holy Word and Holy Shout spells
+- fix join/flee condition
+- fix castle siege logic
+- add an improved battle obstacle selection
+- fix multiple places with shadows while using alpha blending in SDL 1
+- hide World Map for next turn in hot seat mode
+- add an ability to use scroll by mouse in SDL 2
+- fix transparency on World Map and during Battle
+- fix message content and scrollbar for Town Portal spell
+- fix a crash during hero's dismiss
+- fix retaliation condition logic
+- fix a crash while checking hero with focused castle
+- change monster value heuristics for battle and strategic decisions
+- fix Mutant Zombie HP value
+- add color cycling for glowing effects on monsters during battle
+- show adventure map quick info by right click for dimension door spell
+- make hero's path visible after using a portal
+- add a log message for flying monsters
+- fix teleport and luck animation
+- fix ripple effect for disrupting ray and cold ray
+- update focus after hero's dismiss
+- add a condition to check down bridge for unit defense calculation
+- set World Map border size depending on resolution
+- add flag animation of neutral captain in a castle/town
+- do not move to current hero after closing hero's stats window
+- make interface background more uniform on high resolutions
+- add exit button during Dimension Door spell
+- update sounds and music upon teleport spell usage
+- add bad luck animation
+- fix blurred buttons in Adventure Panel
+- fix teleport delay in animation
+- sort spell icons by their duration in monster statistics window
+- fix defense formula for monster during battle
+- fix application exiting behavior (add support for Alt+F4 in Windows for SDL 2)
+- ignore bad spell status for Archmage attack
+- set correct post battle video sequence
+- fix hero fading animation
+- add min and max buttons for troop separation dialog
+- speed up rendering
+- fix hero's flag position in battle
+- fix inability to cast another spell upon cancellation teleport spell
+- play resource collection and sound after reading a dialog
+- fix monster frame jumps from multiple spells
+- fix medusa's stunning effect icon
+- fix Lich animation
+- fix monster count window position during battle
+- fix Archmage dispel post attack effect
+- fix Tower and Magic Arrow animation
+- fix the logic for Summon Boat spell
+- fix Identify Hero spell behavior
+- fix 0 monster count for Visions spell
+- add correct battle speed adjustment formula
+- show disable Dismiss button for a hero in a castle
+- fix idling condition check
+- add correct attacks and timing for monster animation during battle
+- give a control to an opponent over hypnotized monster
+- do not shift application window while loading a map for SDL 2
+- fix Haunt spell incorrect behavior
+- add shadows to most of dialogs
+- play animation of treasure chest after the collection
+- fix incorrect position of a stunned monster
+- remove red cross over town's icon
+- fix new dwelling building animation
+- fix an ability to continue movement after Town portal spell
+- fix quick info window position at world map
+- show reflected monster animation in a dialog for right-side monsters
+- do not auto disable dimension door spell nearby world map edges
+- remove tiny ship icon from hero's status
+- do not move a hero over a portal above another hero
+- add hero movement interruption by left click
+- use shadowing for end movement cell during battle
+- fix inability to move artifacts
+- show a message if not enough points for digging
+- fix monster attack at the start of a new game
+- add fading animation after battle
+- limit Dimension Door spell range
+- fix invisible hero's path after Dimension Door spell
+- fix landing from a ship event to attack a monster after landing
+- fix incorrectly mixed spells for hero's book
+- fix Mass Cure spell icon
+- fix spell icon size and position for monster's info
+- fix cursor behavior beyond world edge
+- set correct position of monster in dwelling info
+- fix minimap colors
+- add an option to switch music type in settings
+- fix incorrect map object naming
+- fix hero, castle and status army info
+- add support for swapping palettes
+- fix hero movement at low speeds
+- fix display info of resources with scouting
+- fix spell sorting crash and mage guild positioning
+- add an optional aspect ratio correction in full-screen mode
+- fix a crash for unhired hero
+- fix alignment of text in monster info dialog
+- fix shifted monster position in recruit window
+- fix negative resources in kingdom possession
+- rework of midi music and sounds
+- fix current unit animation freezing state during battle
+- draw main menu as a background for High Score window
+- fix a case when not destroyed castle gate remains opened after a troop from a castle crossed the bridge during battle
+- fix Phoenixes naming
+- fix EXIT button position in castle options
+- set a correct position for buttons in Configuration dialog
+- fix Genie special ability
+- fix surrender action during battle
+- fix UI value input selectors
+- fix hero animation in battle
+- fix hero position in battle
+- add monster animation in army's info dialog
+- add monster movement animation in Well
+- use BIN file information for correct monster animation
+- fix unit damage formula
+- fix morale and luck events
+- add *nix case insensitive file access
+- make Army Order window during battle optional
+- fix flying monster animation offset
+- fix a crash for hot seat game start
+- add quit dialog popup window and change File Options dialog behavior
+- fix incorrect position of recruit Creature Info window in higher than default resolutions
+- add scalable Sprites support
+- do not show text for hidden Dismiss button
+- fix multiple memory leaks
+- add double quotes to surrender dialog
+
+version 0.7 (18th April 2020)
+- add an edge of the World Map
+- complete hero movement cell if a player stops it by any keyboard button
+- add hotkey 'N' to start a new game within the World Map like in the original game
+- fix crashes in multiple maps during map loading or during AI turns
+- fix game freezes during animation of resources collection
+- make human turn always first
+- do not show file save loading dialog if no saves exist
+- fix 'Adventure Options' button is being blurred after pressing it once on MacOS
+- cancel a dialog by pressing close window button
+- do not allow to move artifacts for not hired heroes in a castle
+- allow file selection by double-clicking on a list entry
+- fix MAX button state for monster change in recruitment window
+- update a cursor while stopping hero's movement
+- add monster animation in castle's well
+- set correct animation speed
+- fix scrolling behavior and add diagonal scrolling
+- display recruit monster window even for 0 creatures within castle's well
+- fix castle well UI elements
+- show hero movement arrow icons with proper colors
+- fix resizing of mini-map in fixed interface mode
+- do not show Necromancy window for 0 obtained skeletons
+- show an empty area instead of tavern building in Necromancer castle
+- fix a state of no information displayed in Signs
+- fix a crash after loading a save and starting any new game after
+- fix a crash during loading empty or newly saved configuration file
+- add initial campaign support (very early beta)
+- fix crystal resource position
+- fix hero path cursor display
+- add missing option's titles in Battle Option dialog
+- fix a popup messages for different types of resources at the World Map
+- fix application title disappearing after loading any map on SDL 2
+- fix disabled black surrender button in hero's options in SDL 2 mode
+- move creature window info to the top of the castle screen
+- make "Buy from well" as a default option
+- remove speed 0 for battle and the World Map
+- fix spell book is being displayed in semi transparent way
+- hero path is recalculated each time when an user chooses the hero
+- show creature information in recruitment building
+- fix incorrectly displayed shadows on the World Map for SDL 2
+- change AI behaviour for castle building strategy
+- fix positions of labels in in-game settings
+- remove 'Dismiss' button for a hero who is not hired yet in a castle
+- fix incorrectly shown message of found resources in the World Map bottom-right window
+- fix battle grid
+- add missing text in battle options dialog
+- fix World Map UI is being drawn inside castle options
+- fix shadow display in a battle
+- disable Spell button for castles
+- change font color for a creature's name
+- fix observation tower coverage area
+- hide dismiss button for monsters if a hero has only one stack of them
+- fix incorrect message for Shipyard by right click
+- fix missing battle hexagonal net was not appearing if enabled until next battle
+- display a warning message about missing files from the original game 
+- disable Continue Movement button for a hero which does not have chosen path
+- required building names are displayed on a separate line each
+- fix no building image for already built building for right mouse click
+- fix incorrect image for Captains Quarters
+- renamed 'Free Heroes II' to 'Free Heroes of Might and Magic II'
+- show disabled "Continue Movement" button for castle 
+- fix number of monsters being displayed in a black box
+- add a script to download a demo version of the original game
+- set default display size to 640x480 pixels
+- add Windows build
+
+30th August 2019
+- move the repository to https://github.com/ihhub/fheroes2
